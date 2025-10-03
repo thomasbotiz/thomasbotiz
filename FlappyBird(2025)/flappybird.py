@@ -135,20 +135,7 @@ class GameEnv(gym.Env):
         if self.score > self.previous_score:
             self.previous_score = self.score
             reward += 10
-
-        next_pipe = None
-        for pipe in self.pipes:
-            if pipe.rect.x > self.player.rect.x and not pipe.is_top:
-                next_pipe = pipe
-                break
-
-        if next_pipe:
-            gap_center = next_pipe.rect.y - Config.PIPE_GAP_HEIGHT / 2
-            dy = abs(self.player.rect.centery - gap_center)
             
-            if self.check_player_between_pipes():
-                reward += 1 - dy / 100#Rewarded for staying central between pipes
-
         return reward
 
     def handle_pipe_generation(self):
