@@ -18,8 +18,6 @@ https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html
 
 device = torch.device("cpu") 
 
-
-
 Transition = namedtuple('Transition',
                         ('state', 'action', 'next_state', 'reward'))
 

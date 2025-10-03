@@ -1,6 +1,6 @@
-Custom Flappy Bird Env wrapped as a gym object. 
+Custom Flappy Bird environment
 
-To play manually: Run flappybird.py
+To play manually: Run flappybird.py(Press space to jump)
 
 To train the AI: Run DQNAI.py
 

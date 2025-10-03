@@ -165,7 +165,7 @@ class Item:
         
         Returns:
             summary (dict): The same Buy/Sell Summary, grouped
-        """
+        """https://discord.com/developers/docs/quick-start/getting-started
         if len(summary) <= 1:
             return summary
         
