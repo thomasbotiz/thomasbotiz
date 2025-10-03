@@ -123,19 +123,33 @@ class GameEnv(gym.Env):
             self.check_player_between_pipes()],
             dtype=np.float32
             )
-
     
     def calculate_reward(self):
+        reward = 0.1
         if not self.player.is_alive:
-            return -10 
+            reward -= 100
         
         if self.player.rect.y < self.player.image.get_height():#discourage touching the ceiling
-            return -0.1
+            reward -= 1
         
         if self.score > self.previous_score:
             self.previous_score = self.score
-            return 5
-        return 0.1
+            reward += 10
+
+        next_pipe = None
+        for pipe in self.pipes:
+            if pipe.rect.x > self.player.rect.x and not pipe.is_top:
+                next_pipe = pipe
+                break
+
+        if next_pipe:
+            gap_center = next_pipe.rect.y - Config.PIPE_GAP_HEIGHT / 2
+            dy = abs(self.player.rect.centery - gap_center)
+            
+            if self.check_player_between_pipes():
+                reward += 1 - dy / 100#Rewarded for staying central between pipes
+
+        return reward
 
     def handle_pipe_generation(self):
         if self.check_to_spawn_pipes():
@@ -342,7 +356,7 @@ class Config:
     PIPE_WIDTH = 70
     PIPE_GAP_HEIGHT = 150
     TOP_PIPE_MIN_DEPTH = int(WINDOW_HEIGHT / 20)
-    TOP_PIPE_MAX_DEPTH = int(WINDOW_HEIGHT *19//20 - PIPE_GAP_HEIGHT)
+    TOP_PIPE_MAX_DEPTH = int(WINDOW_HEIGHT * 0.8)
     PIPE_COOLDOWN_TIMER = 90 #spawns a pair every X frames
     
     #Scoreboard
