@@ -249,7 +249,7 @@ class Item:
     @staticmethod
     def calculate_percentage_difference(val1: float|int, val2: float|int) -> float:
         try:
-            return abs((val1 - val2) / (val1 + val2) / 2) * 100
+            return abs((val1 - val2) / abs((val1 + val2) / 2)) * 100
         except:
             if not isinstance(val1, (int, float)) or not isinstance(val2, (int, float)):
                 logger.error(f"Calculation between {val1} and {val2} failed as invalid datatype!")
