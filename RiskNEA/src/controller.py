@@ -39,22 +39,3 @@ class ConsoleController:
 
         except Exception as e:
             print(e)
-
-    def create_metadata(self) -> GameMetadata:
-        while True:
-            try:
-                while True:
-                    gamemode = input("Which gamemode are you playing? ")
-                    if gamemode in GameMode:
-                        break
-                    else:
-                        print("Input LOCAL_PLAY, TRAINING, or SIMULATION!")
-                    num_players = int(input("Input how many players there will be from 0 to 6: "))
-                    
-                
-
-
-
-
-            except Exception as e:
-                print(e)

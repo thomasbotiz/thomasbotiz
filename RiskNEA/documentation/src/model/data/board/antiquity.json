@@ -1,0 +1,86 @@
+{
+   "board": {
+    "continents": {
+      "europe": {
+        "name": "Europe",
+        "troop_bonus": 5,
+        "territories": [
+          "great_britain",
+          "scandinavia",
+          "northern_europe",
+          "western_europe",
+          "southern_europe"
+        ]
+      },
+      "africa": {
+        "name": "Africa",
+        "troop_bonus": 3,
+        "territories": [
+          "north_africa",
+          "east_africa",
+          "egypt"
+        ]
+      },
+      "asia": {
+        "name": "Asia",
+        "troop_bonus": 7,
+        "territories": [
+          "ukraine",
+          "middle_east",
+          "afghanistan",
+          "ural"
+        ]
+      }
+     },
+    "territories": {
+    "great_britain": {
+        "name": "Great Britain",
+        "connected_territories": ["scandinavia", "western_europe"]
+    },
+    "scandinavia": {
+        "name": "Scandinavia",
+        "connected_territories": ["eastern_europe", "great_britain"]
+    },
+    "western_europe": {
+        "name": "Western Europe",
+        "connected_territories": ["great_britain", "eastern_europe", "north_africa"]
+    },
+    "eastern_europe": {
+        "name": "Eastern Europe",
+        "connected_territories": ["western_europe", "southern_europe", "scandinavia"]
+    },
+    "southern_europe": {
+        "name": "Southern Europe",
+        "connected_territories": ["eastern_europe", "ukraine", "middle_east"]
+    },
+    "north_africa": {
+        "name": "North Africa",
+        "connected_territories": ["western_europe", "egypt"]
+    },
+    "egypt": {
+        "name": "Egypt",
+        "connected_territories": ["north_africa", "east_africa"]
+    },
+    "east_africa": {
+        "name": "East Africa",
+        "connected_territories": ["egypt", "middle_east"]
+    },
+    "middle_east": {
+        "name": "Middle East",
+        "connected_territories": ["north_africa", "southern_europe", "ukraine"]
+    },
+    "ukraine": {
+        "name": "Ukraine",
+        "connected_territories": ["afghanistan", "ural", "southern_europe", "middle_east"]
+    },
+    "afghanistan": {
+        "name": "Afghanistan",
+        "connected_territories": ["ukraine", "ural"]
+    },
+    "ural": {
+        "name": "Afghanistan",
+        "connected_territories": ["ukraine", "afghanistan"]
+    }
+  }
+ }
+}
