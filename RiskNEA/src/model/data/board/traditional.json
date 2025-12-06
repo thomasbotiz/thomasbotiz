@@ -1,0 +1,303 @@
+{
+  "board": {
+    "continents": [
+      {
+        "id": "north_america",
+        "name": "North America",
+        "bonus": 5,
+        "colour": "#4FC3F7",
+        "territories": [
+          "alaska",
+          "northwest_territory",
+          "greenland",
+          "alberta",
+          "ontario",
+          "quebec",
+          "western_united_states",
+          "eastern_united_states",
+          "central_america"
+        ]
+      },
+      {
+        "id": "south_america",
+        "name": "South America",
+        "bonus": 2,
+        "colour": "#81C784",
+        "territories": ["venezuela", "peru", "brazil", "argentina"]
+      },
+      {
+        "id": "europe",
+        "name": "Europe",
+        "bonus": 5,
+        "colour": "#BA68C8",
+        "territories": [
+          "iceland",
+          "scandinavia",
+          "ukraine",
+          "great_britain",
+          "northern_europe",
+          "western_europe",
+          "southern_europe"
+        ]
+      },
+      {
+        "id": "africa",
+        "name": "Africa",
+        "bonus": 3,
+        "colour": "#FFD54F",
+        "territories": [
+          "north_africa",
+          "egypt",
+          "east_africa",
+          "congo",
+          "south_africa",
+          "madagascar"
+        ]
+      },
+      {
+        "id": "asia",
+        "name": "Asia",
+        "bonus": 7,
+        "colour": "#FF8A65",
+        "territories": [
+          "ural",
+          "siberia",
+          "yakutsk",
+          "kamchatka",
+          "irkutsk",
+          "mongolia",
+          "japan",
+          "afghanistan",
+          "china",
+          "middle_east",
+          "india",
+          "siam"
+        ]
+      },
+      {
+        "id": "australia",
+        "name": "Australia",
+        "bonus": 2,
+        "colour": "#90CAF9",
+        "territories": [
+          "indonesia",
+          "new_guinea",
+          "western_australia",
+          "eastern_australia"
+        ]
+      }
+    ],
+    "territories": [
+      {
+        "id": "alaska",
+        "name": "Alaska",
+        "connected_territories": ["northwest_territory", "alberta", "kamchatka"]
+      },
+      {
+        "id": "northwest_territory",
+        "name": "Northwest Territory",
+        "connected_territories": ["alaska", "alberta", "ontario", "greenland"]
+      },
+      {
+        "id": "greenland",
+        "name": "Greenland",
+        "connected_territories": ["northwest_territory", "ontario", "quebec", "iceland"]
+      },
+      {
+        "id": "alberta",
+        "name": "Alberta",
+        "connected_territories": ["alaska", "northwest_territory", "ontario", "western_united_states"]
+      },
+      {
+        "id": "ontario",
+        "name": "Ontario",
+        "connected_territories": ["northwest_territory", "alberta", "western_united_states", "eastern_united_states", "quebec", "greenland"]
+      },
+      {
+        "id": "quebec",
+        "name": "Quebec",
+        "connected_territories": ["ontario", "eastern_united_states", "greenland"]
+      },
+      {
+        "id": "western_united_states",
+        "name": "Western United States",
+        "connected_territories": ["alberta", "ontario", "eastern_united_states", "central_america"]
+      },
+      {
+        "id": "eastern_united_states",
+        "name": "Eastern United States",
+        "connected_territories": ["western_united_states", "ontario", "quebec", "central_america"]
+      },
+      {
+        "id": "central_america",
+        "name": "Central America",
+        "connected_territories": ["western_united_states", "eastern_united_states", "venezuela"]
+      },
+      {
+        "id": "venezuela",
+        "name": "Venezuela",
+        "connected_territories": ["central_america", "peru", "brazil"]
+      },
+      {
+        "id": "peru",
+        "name": "Peru",
+        "connected_territories": ["venezuela", "brazil", "argentina"]
+      },
+      {
+        "id": "brazil",
+        "name": "Brazil",
+        "connected_territories": ["venezuela", "peru", "argentina", "north_africa"]
+      },
+      {
+        "id": "argentina",
+        "name": "Argentina",
+        "connected_territories": ["peru", "brazil"]
+      },
+      {
+        "id": "iceland",
+        "name": "Iceland",
+        "connected_territories": ["greenland", "great_britain", "scandinavia"]
+      },
+      {
+        "id": "scandinavia",
+        "name": "Scandinavia",
+        "connected_territories": ["iceland", "great_britain", "northern_europe", "ukraine"]
+      },
+      {
+        "id": "ukraine",
+        "name": "Ukraine",
+        "connected_territories": ["scandinavia", "northern_europe", "southern_europe", "middle_east", "afghanistan", "ural"]
+      },
+      {
+        "id": "great_britain",
+        "name": "Great Britain",
+        "connected_territories": ["iceland", "scandinavia", "northern_europe", "western_europe"]
+      },
+      {
+        "id": "northern_europe",
+        "name": "Northern Europe",
+        "connected_territories": ["great_britain", "scandinavia", "ukraine", "southern_europe", "western_europe"]
+      },
+      {
+        "id": "western_europe",
+        "name": "Western Europe",
+        "connected_territories": ["great_britain", "northern_europe", "southern_europe", "north_africa"]
+      },
+      {
+        "id": "southern_europe",
+        "name": "Southern Europe",
+        "connected_territories": ["western_europe", "northern_europe", "ukraine", "egypt", "north_africa", "middle_east"]
+      },
+      {
+        "id": "north_africa",
+        "name": "North Africa",
+        "connected_territories": ["brazil", "western_europe", "southern_europe", "egypt", "east_africa", "congo"]
+      },
+      {
+        "id": "egypt",
+        "name": "Egypt",
+        "connected_territories": ["north_africa", "southern_europe", "east_africa", "middle_east"]
+      },
+      {
+        "id": "east_africa",
+        "name": "East Africa",
+        "connected_territories": ["egypt", "north_africa", "congo", "south_africa", "madagascar", "middle_east"]
+      },
+      {
+        "id": "congo",
+        "name": "Congo",
+        "connected_territories": ["north_africa", "east_africa", "south_africa"]
+      },
+      {
+        "id": "south_africa",
+        "name": "South Africa",
+        "connected_territories": ["congo", "east_africa", "madagascar"]
+      },
+      {
+        "id": "madagascar",
+        "name": "Madagascar",
+        "connected_territories": ["south_africa", "east_africa"]
+      },
+      {
+        "id": "ural",
+        "name": "Ural",
+        "connected_territories": ["ukraine", "siberia", "china", "afghanistan"]
+      },
+      {
+        "id": "siberia",
+        "name": "Siberia",
+        "connected_territories": ["ural", "yakutsk", "irkutsk", "mongolia", "china"]
+      },
+      {
+        "id": "yakutsk",
+        "name": "Yakutsk",
+        "connected_territories": ["siberia", "irkutsk", "kamchatka"]
+      },
+      {
+        "id": "kamchatka",
+        "name": "Kamchatka",
+        "connected_territories": ["yakutsk", "irkutsk", "mongolia", "japan", "alaska"]
+      },
+      {
+        "id": "irkutsk",
+        "name": "Irkutsk",
+        "connected_territories": ["siberia", "yakutsk", "kamchatka", "mongolia"]
+      },
+      {
+        "id": "mongolia",
+        "name": "Mongolia",
+        "connected_territories": ["irkutsk", "siberia", "china", "kamchatka", "japan"]
+      },
+      {
+        "id": "japan",
+        "name": "Japan",
+        "connected_territories": ["mongolia", "kamchatka"]
+      },
+      {
+        "id": "afghanistan",
+        "name": "Afghanistan",
+        "connected_territories": ["ukraine", "ural", "china", "india", "middle_east"]
+      },
+      {
+        "id": "china",
+        "name": "China",
+        "connected_territories": ["ural", "siberia", "mongolia", "siam", "india", "afghanistan"]
+      },
+      {
+        "id": "middle_east",
+        "name": "Middle East",
+        "connected_territories": ["ukraine", "southern_europe", "egypt", "east_africa", "india", "afghanistan"]
+      },
+      {
+        "id": "india",
+        "name": "India",
+        "connected_territories": ["middle_east", "afghanistan", "china", "siam"]
+      },
+      {
+        "id": "siam",
+        "name": "Siam",
+        "connected_territories": ["india", "china", "indonesia"]
+      },
+      {
+        "id": "indonesia",
+        "name": "Indonesia",
+        "connected_territories": ["siam", "new_guinea", "western_australia"]
+      },
+      {
+        "id": "new_guinea",
+        "name": "New Guinea",
+        "connected_territories": ["indonesia", "western_australia", "eastern_australia"]
+      },
+      {
+        "id": "western_australia",
+        "name": "Western Australia",
+        "connected_territories": ["indonesia", "new_guinea", "eastern_australia"]
+      },
+      {
+        "id": "eastern_australia",
+        "name": "Eastern Australia",
+        "connected_territories": ["western_australia", "new_guinea"]
+      }
+    ]
+  }
+}
