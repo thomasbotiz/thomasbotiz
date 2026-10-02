@@ -1,0 +1,222 @@
+{
+  "alaska_card": {
+    "id": 0,
+    "territory": "alaska",
+    "unit": "infantry"
+  },
+  "northwest_territory_card": {
+    "id": 1,
+    "territory": "northwest_territory",
+    "unit": "cavalry"
+  },
+  "greenland_card": {
+    "id": 2,
+    "territory": "greenland",
+    "unit": "artillery"
+  },
+  "alberta_card": {
+    "id": 3,
+    "territory": "alberta",
+    "unit": "infantry"
+  },
+  "ontario_card": {
+    "id": 4,
+    "territory": "ontario",
+    "unit": "cavalry"
+  },
+  "quebec_card": {
+    "id": 5,
+    "territory": "quebec",
+    "unit": "artillery"
+  },
+  "western_united_states_card": {
+    "id": 6,
+    "territory": "western_united_states",
+    "unit": "infantry"
+  },
+  "eastern_united_states_card": {
+    "id": 7,
+    "territory": "eastern_united_states",
+    "unit": "cavalry"
+  },
+  "central_america_card": {
+    "id": 8,
+    "territory": "central_america",
+    "unit": "artillery"
+  },
+  "venezuela_card": {
+    "id": 9,
+    "territory": "venezuela",
+    "unit": "infantry"
+  },
+  "peru_card": {
+    "id": 10,
+    "territory": "peru",
+    "unit": "cavalry"
+  },
+  "brazil_card": {
+    "id": 11,
+    "territory": "brazil",
+    "unit": "artillery"
+  },
+  "argentina_card": {
+    "id": 12,
+    "territory": "argentina",
+    "unit": "infantry"
+  },
+  "iceland_card": {
+    "id": 13,
+    "territory": "iceland",
+    "unit": "cavalry"
+  },
+  "great_britain_card": {
+    "id": 14,
+    "territory": "great_britain",
+    "unit": "artillery"
+  },
+  "western_europe_card": {
+    "id": 15,
+    "territory": "western_europe",
+    "unit": "infantry"
+  },
+  "northern_europe_card": {
+    "id": 16,
+    "territory": "northern_europe",
+    "unit": "cavalry"
+  },
+  "southern_europe_card": {
+    "id": 17,
+    "territory": "southern_europe",
+    "unit": "artillery"
+  },
+  "ukraine_card": {
+    "id": 18,
+    "territory": "ukraine",
+    "unit": "infantry"
+  },
+  "scandinavia_card": {
+    "id": 19,
+    "territory": "scandinavia",
+    "unit": "cavalry"
+  },
+  "north_africa_card": {
+    "id": 20,
+    "territory": "north_africa",
+    "unit": "artillery"
+  },
+  "egypt_card": {
+    "id": 21,
+    "territory": "egypt",
+    "unit": "infantry"
+  },
+  "east_africa_card": {
+    "id": 22,
+    "territory": "east_africa",
+    "unit": "cavalry"
+  },
+  "congo_card": {
+    "id": 23,
+    "territory": "congo",
+    "unit": "artillery"
+  },
+  "south_africa_card": {
+    "id": 24,
+    "territory": "south_africa",
+    "unit": "infantry"
+  },
+  "madagascar_card": {
+    "id": 25,
+    "territory": "madagascar",
+    "unit": "cavalry"
+  },
+  "ural_card": {
+    "id": 26,
+    "territory": "ural",
+    "unit": "artillery"
+  },
+  "siberia_card": {
+    "id": 27,
+    "territory": "siberia",
+    "unit": "infantry"
+  },
+  "yakutsk_card": {
+    "id": 28,
+    "territory": "yakutsk",
+    "unit": "cavalry"
+  },
+  "kamchatka_card": {
+    "id": 29,
+    "territory": "kamchatka",
+    "unit": "artillery"
+  },
+  "irkutsk_card": {
+    "id": 30,
+    "territory": "irkutsk",
+    "unit": "infantry"
+  },
+  "mongolia_card": {
+    "id": 31,
+    "territory": "mongolia",
+    "unit": "cavalry"
+  },
+  "japan_card": {
+    "id": 32,
+    "territory": "japan",
+    "unit": "artillery"
+  },
+  "afghanistan_card": {
+    "id": 33,
+    "territory": "afghanistan",
+    "unit": "infantry"
+  },
+  "china_card": {
+    "id": 34,
+    "territory": "china",
+    "unit": "cavalry"
+  },
+  "middle_east_card": {
+    "id": 35,
+    "territory": "middle_east",
+    "unit": "artillery"
+  },
+  "india_card": {
+    "id": 36,
+    "territory": "india",
+    "unit": "infantry"
+  },
+  "siam_card": {
+    "id": 37,
+    "territory": "siam",
+    "unit": "cavalry"
+  },
+  "indonesia_card": {
+    "id": 38,
+    "territory": "indonesia",
+    "unit": "artillery"
+  },
+  "new_guinea_card": {
+    "id": 39,
+    "territory": "new_guinea",
+    "unit": "infantry"
+  },
+  "western_australia_card": {
+    "id": 40,
+    "territory": "western_australia",
+    "unit": "cavalry"
+  },
+  "eastern_australia_card": {
+    "id": 41,
+    "territory": "eastern_australia",
+    "unit": "artillery"
+  },
+  "wild_card_1": {
+    "id": 42,
+    "territory": null,
+    "unit": null
+  },
+  "wild_card_2": {
+    "id": 43,
+    "territory": null,
+    "unit": null
+  }
+}
